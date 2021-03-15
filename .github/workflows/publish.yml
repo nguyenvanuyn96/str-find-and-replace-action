@@ -10,7 +10,8 @@ jobs:
       - name: Get release version
         id: get_version
         run: |
-          release_version="$(echo $GITHUB_REF | cut -d / -f 3)}"
+          release_version="$(echo $GITHUB_REF | cut -d / -f 3)"
+          echo "release_version = $release_version"
           echo "::set-output name=RELEASE_VERSION::${release_version}"
 
       - name: Publish to Registry
