@@ -1,4 +1,4 @@
-name: "Find and Replace"
+name: "Find and Replace Action"
 description: "Find and replace a string in your project files"
 author: "Uy Nguyen"
 branding:
