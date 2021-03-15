@@ -24,4 +24,4 @@ outputs:
     description: "The number of files which have been modified"
 runs:
   using: "docker"
-  image: "docker://nguyenvanuyn96/str-find-and-replace-github-action-docker:0.0.1
+  image: "docker://nguyenvanuyn96/str-find-and-replace-action:latest
