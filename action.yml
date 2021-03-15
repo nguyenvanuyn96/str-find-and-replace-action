@@ -1,0 +1,27 @@
+name: "Find and Replace"
+description: "Find and replace a string in your project files"
+author: "Uy Nguyen"
+branding:
+  icon: search
+  color: blue
+inputs:
+  include:
+    description: "A regular expression of files to include in our find and replace"
+    default: ".*" # Include everything by default
+    required: false
+  exclude:
+    description: "A regular expression of files to exclude in our find and replace"
+    default: ".git" # Ignore the `.git` dirtectory by default
+    required: false
+  find:
+    description: "The string we want to replace"
+    required: true
+  replace:
+    description: "The new string to replace with"
+    required: true
+outputs:
+  modifiedFiles:
+    description: "The number of files which have been modified"
+runs:
+  using: "docker"
+  image: "docker://nguyenvanuyn96/str-find-and-replace-action@master
