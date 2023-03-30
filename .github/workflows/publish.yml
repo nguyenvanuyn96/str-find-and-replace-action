@@ -15,7 +15,7 @@ jobs:
           echo "::set-output name=RELEASE_VERSION::${release_version}"
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: nguyenvanuyn96/str-find-and-replace-action
           username: ${{ secrets.DOCKER_USERNAME }}
